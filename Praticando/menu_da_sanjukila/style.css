@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #f2e2ca;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #ffc6c3, #fdbd9e);
+    padding: 10px;
+    text-align: center;
+    color: #ef233c;
+    font-size: 24px;
+    
+}
+
+header h1{
+    text-align: center;
+}
+
+
+nav{
+    background-color:#fdbd9e;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+ul > li > a{
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    transition-duration:.3s ;
+    color: #e04759;
+    font-size: 19px;
+
+}
+
+ul > li > a:hover{
+    border-radius: 60px;
+    background-color: #f2e2ca;
+    text-decoration: underline;
+}
+

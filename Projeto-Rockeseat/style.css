@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    /*Rever a aula do reset de CSS*/
+}
+
+:root {
+    --text-color: white; 
+    --bg-url: url(./Fundo/bg-mobilee.jpg);
+    --strocke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.5);
+    --surface-color-hover: rgba(255, 255, 255, 0.2);
+    --highligt-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(/Projeto/Complementares);
+}
+
+ 
+.light {
+
+    --text-color: black;
+    --bg-url: url(./Fundo/bg-mobile-light.jpg);
+    --strocke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.5);
+    --surface-color-hover: rgba(0, 0, 0, 0.2);
+    --highligt-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(/Projeto/Complementares/switch/Sun.png);
+    
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    
+}
+body{
+    /* Podemos transformar isso em uma única linha de codigo 
+ background-image: url(./bg-mobilee.jpg);
+ background-repeat: no-repeat;
+ background-position: top center;
+background-size: cover; 
+    background: color image repeat position/size
+*/
+   background: var(--bg-url) no-repeat top center/cover;
+ 
+}
+
+#container{
+    width: 360px;
+    margin: 56px auto 0;
+    padding-top: 56px;
+    padding: 0 24px;
+ }
+
+ /*profile*/
+
+ .profile{
+    text-align: center;
+    padding: 24px;
+ }
+ 
+ .profile img{
+    display: block;
+    width: 112px;
+    /*Normalmente no CSS não precisamos de especificar uma altura*/
+    margin: auto;
+ }
+ .profile p{
+    display: block;
+    text-align: center;
+    /*Essa centralizacão é geral, no caso de existir outro paragrafo, verificar esse*/
+    font-weight: 500px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+ /*Switch botã0*/
+
+ .switch button{
+    width: 32px;
+    height: 32px; 
+    background-image:var(--switch-bg-url);
+    border: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+ }
+
+/*Links */
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+
+    /*background: var(--surface-color);*/
+    border: 1px solid var(--strocke-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+    /*Não sei pq mais o trasitin background se tornou uma tag soluta na minha versão, posso usar o trasition all, mas n sei qual o alcane do all, em quais elemntos ele afeta*/
+    transition: background 0.2s;
+}
+
+/*Pseudo elemento para onfigurar estado*/
+ul li a:hover{
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color)
+
+}
+
+/*Redes socias*/
+
+.social_links{
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+
+    font-size: 40px;
+
+}
+.social_links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+.social_links a:hover{
+    background: var(--highligt-color);
+    padding: 16px;
+    
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px
+}
+

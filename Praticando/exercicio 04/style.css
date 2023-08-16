@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:url(teste.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    text-align: center;
+    z-index: 1;
+    background-color: #2d3e73d7;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+a{
+    padding-right: 45px;
+    color: #D99C52;
+    text-decoration: none;
+}

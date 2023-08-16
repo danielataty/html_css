@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 100%;
+    min-width: 320px;
+    
+    text-align: center;
+    margin: 190px auto ;
+
+}
+
+div{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div > img{
+    padding: 10px;
+}
+
+div > h1{
+    padding: 20px;
+}
+
+p{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+a {
+    font-size: 17px;
+    text-decoration: none;
+    border: 2px solid ;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding: 5% 30%;
+    border-radius: 50px;
+}
+
+.twitter{
+    width: 320px;
+    height: 460px;   
+    border: .1px solid #0D0D0D;
+    margin: auto 10px 15px ;
+    
+}
+
+.instagram{
+    width: 320px;
+    height: 460px;
+    margin: auto 10px;
+    margin: auto 10px 15px ;
+    background-color: #E2306C;
+    color:#FFE7FF;
+
+}
+
+.instagram > a {
+    background-color: white;
+    color: #E2306C;
+}
+
+.youtube{
+    width: 310px;
+    height: 460px;
+    margin: auto 10px 15px ;
+    border: 1px solid #0D0D0D;
+    margin: auto 10px;
+}

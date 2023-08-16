@@ -1,0 +1,79 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c0c0c;
+}
+
+a{
+    position: relative;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 287;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+a span{
+    position: relative;
+    color: #fff;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+ a.liquido{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 287px;
+    height: 230px;
+    background: #4973ff;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, .5);
+    transition: 5s;
+ }
+
+ a.liquido::after,
+ a.liquido::before{
+    content: '';
+    width: 170%;
+    height: 250%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    background: #0000;
+ }
+
+ a.liquido::before{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 10s linear infinite ;
+ }
+
+ a:hover.liquido{
+    top: -139px;
+ }
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}

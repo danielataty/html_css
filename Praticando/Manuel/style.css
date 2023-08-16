@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+
+
+body{
+    background: linear-gradient(to left, #AA44B1, #f762af) ;
+    
+}
+
+main{
+    max-width: 400px;
+    width: 90%;
+    min-height: 650px;
+    margin: 0 auto;
+    margin-top: 5%;
+    
+    border-radius: 1.5%;
+
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    padding: 25px;
+
+}
+
+h1{
+    font-weight: 649;
+}
+
+input{
+    width: 98%;
+    height: 30px;
+
+    display: block;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #c0007385;
+    
+
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: px;
+     
+    font-size: 19px;
+}
+
+a{
+    display: block;
+
+    font-size: 20px;
+    text-decoration: none;
+
+    color: white;
+
+
+}
+
+.new_page{
+    
+    border-radius: 8px;
+    margin: 20px 0px ;
+    padding: 13px;
+ 
+    color: white;
+    background: linear-gradient(to right, #AA44B1, #f762af);
+
+    font-size: 20px;
+    text-align: center;
+}
+
+P{
+    text-align: center;
+    font: weight 4%; ;
+}
+
+.twitter{
+    display: block;
+    
+    background-color: #05C7F2;
+    color: white;
+
+    margin: 20px 0px ;
+    margin-bottom: 40px;
+
+    padding: 13px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.facebook{
+    display: block;
+    
+    background-color: #4263A8;
+    color: white;
+    
+    border-radius: 8px;
+    margin: 20px 0px ;
+    padding: 13px;
+ 
+    font-size: 20px;
+    text-decoration: none;
+}
+ion-icon {
+    color: rgb(252, 252, 253);
+  }
+
+
+
+

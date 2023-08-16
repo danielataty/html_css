@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png"type="image/x-icon">
+    <title></title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir em dispositivos diferentes,ou simplesmente aumente ou dimunua o tamanho</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Pequeno.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Media.png" type="image/png">
+        <img src="Grande.png" alt="imagen flexivel"> <!--A base smp é a maior imagen, e vamos adicionando outras de cima para baixo(da maior para a menor)-->
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios</p>
+    <audio src="pagod.mp3" controls autoplay></audio> <!---Existem navegadores que não são compativeis com o formato MP3, podemos utilizar outros formatos  que são o MP3, WAV, OGG-->
+    <P>Outra maneira de adicionar o audio</P>
+    <audio preload="metadata"  controls autoplay > <!--O preload é um parametro com 3 opções o mais comum é o auto, mas ele descarrega automaticamente o ficheiro entt n é o mais recomendado  -->
+        <source src="pagod.mp3" type="audio/mpeg">
+        <source src="pagod.ogg" type="audio/ogg">
+        <source src="pagod.wav" type="audio/wav"> <!--Esse é o formato mais pesado, e não é o mais recomendado  -->
+        <p>Infelizmente o seu navegador não consegue reproduziur o audio</p>
+        <p><a href="pagod.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+</body>
+</html>
