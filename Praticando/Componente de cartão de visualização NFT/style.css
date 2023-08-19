@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/*#F8FFFF cor do h1
+#D0DEE7
+#012E57 cor do fundo do main
+#162C40 cor do background
+cor das letras #7E95B4 
+cor do ETH #0CF2DB
+cor do creation #737C8D*/
+
+body{
+
+    background-color: #162C40;
+    
+}
+
+main{
+    margin: auto;
+    margin-top: 6%;
+    width: 380px;
+    background-color: #012E57;
+    padding: 30px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#img_principal{
+    width: 220px;
+    border-radius: 20px;
+    
+    
+}
+
+h1{
+    color: #F8FFFF;
+}
+
+p{
+    color: #7E95B4 ;
+    font-size: 18pt;
+}
+
+.icons{
+    display: inline-flex;
+    
+}
+.about{
+    display: inline-flex;
+    border-top: solid #7E95B4 2px;
+}
+
+.litle_img{
+    width: 55px;
+    padding: 10px;
+}
+
