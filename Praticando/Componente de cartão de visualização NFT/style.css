@@ -1,39 +1,46 @@
 @charset "UTF-8";
 
-/*#F8FFFF cor do h1
-#D0DEE7
-#012E57 cor do fundo do main
-#162C40 cor do background
-cor das letras #7E95B4 
-cor do ETH #0CF2DB
-cor do creation #737C8D*/
-
 body{
-
     background-color: #162C40;
-    
 }
 
 main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
-    margin-top: 6%;
-    width: 380px;
-    height: 550px;
+    
+    max-width: 400px;
+    min-width: 375px;
+    max-height: 550;
+    min-height: 665px;
+
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #012E57;
+
     padding: 30px;
     border-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
+
+
 
 #img_principal{
-    width: 220px;
+    display: flex;
+
+    width: 400px;
+    margin: auto;
+
     border-radius: 20px;
-    
-    
 }
 
-h1{
+h1{ 
     color: #F8FFFF;
+}
+
+h1:hover{
+    color: aqua;
 }
 
 p{
@@ -43,15 +50,37 @@ p{
 
 .icons{
     display: inline-flex;
-    
 }
+
+.icon1 {
+    color:aqua ;
+    margin-right: 60px;
+}
+
+.icon2{
+    margin-left: 90px;
+}
+
 .about{
     display: inline-flex;
-    border-top: solid #7E95B4 2px;
+    width: 400px;
+    
+    border-top: solid #606e80 0.1px;
+}
+
+.about > p > a{
+    text-decoration: none;
+    font-weight: 100;
+
+    color: white;   
+}
+
+.about > p > a:hover{
+    color: aqua;
 }
 
 .litle_img{
-    width: 55px;
+    max-width: 50px;
     padding: 10px;
 }
 
